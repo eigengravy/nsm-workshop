@@ -1,1 +1,1 @@
-# nsm-workshop
+# NSM Workshop
