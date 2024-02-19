@@ -17,4 +17,4 @@
 source /home/apps/anaconda3/bin/activate
 conda activate machine-learning
 
-python sim.py
+srun python sim.py
