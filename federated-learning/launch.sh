@@ -34,3 +34,5 @@ check_package() {
 for pkg in "${packages[@]}"; do
     check_package "$pkg"
 done
+
+python sim.py
