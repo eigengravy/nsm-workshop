@@ -37,4 +37,4 @@ for pkg in "${packages[@]}"; do
     check_package "$pkg"
 done
 
-python sim.py
+python sim.py --num_gpus=0.5
