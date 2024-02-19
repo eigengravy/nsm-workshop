@@ -17,4 +17,20 @@
 source /home/apps/anaconda3/bin/activate
 conda activate machine-learning
 
-python sim.py
+# Define the list of Python packages you want to check
+packages=("torch" "flwr" "flwr_datasets" "lightning")
+
+# Function to check if package is installed
+check_package() {
+    python -c "import $1" &>/dev/null
+    if [ $? -eq 0 ]; then
+        echo "$1 is installed."
+    else
+        echo "$1 is not installed."
+    fi
+}
+
+# Check each package
+for pkg in "${packages[@]}"; do
+    check_package "$pkg"
+done
