@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH -J machine-learing              # name of the job
+#SBATCH -J machine-learning              # name of the job
 
 #SBATCH -N 1
 

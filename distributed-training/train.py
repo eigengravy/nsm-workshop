@@ -13,5 +13,5 @@ dataset = MNIST(os.getcwd(), download=True, transform=L.ToTensor())
 train_loader = torch.utils.data.DataLoader(dataset)
 
 # train the model (hint: here are some helpful Trainer arguments for rapid idea iteration)
-trainer = L.Trainer(limit_train_batches=100, max_epochs=1)
+trainer = L.Trainer(limit_train_batches=100, max_epochs=10)
 trainer.fit(model=L.autoencoder, train_dataloaders=train_loader)

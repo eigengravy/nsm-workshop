@@ -3,6 +3,7 @@ from torch import optim, nn, utils, Tensor
 from torchvision.datasets import MNIST
 from torchvision.transforms import ToTensor
 import lightning as L
+from lightning import Trainer
 
 # define any number of nn.Modules (or use your current ones)
 encoder = nn.Sequential(nn.Linear(28 * 28, 64), nn.ReLU(), nn.Linear(64, 3))
